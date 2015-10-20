@@ -57,7 +57,7 @@ public class CellGridDialogPageFragment extends Fragment implements View.OnClick
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.dialog_page, container, false);
+        View view = inflater.inflate(R.layout.cell_grid_dialog_page, container, false);
         init(view);
         return view;
     }

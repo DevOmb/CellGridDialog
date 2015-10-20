@@ -59,7 +59,7 @@ public class CellGridDialog extends DialogFragment implements CellGridDialogPage
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.dialog, container, false);
+        View view = inflater.inflate(R.layout.cell_grid_dialog, container, false);
         init(view);
         return view;
     }
@@ -68,11 +68,11 @@ public class CellGridDialog extends DialogFragment implements CellGridDialogPage
     //region init
     private void init(View view) {
         //Get views
-        previousButton = (DImageButton) view.findViewById(R.id.tv_show_dialog_previous_button);
-        nextButton = (DImageButton) view.findViewById(R.id.tv_show_dialog_next_button);
-        topLabel = (TextView) view.findViewById(R.id.tv_show_dialog_top_label);
-        viewPager = (ViewPager) view.findViewById(R.id.tv_show_dialog_grid_view_pager);
-        acceptButton = (DButton) view.findViewById(R.id.tv_show_dialog_accept_button);
+        previousButton = (DImageButton) view.findViewById(R.id.cell_grid_dialog_previous_button);
+        nextButton = (DImageButton) view.findViewById(R.id.cell_grid_dialog_next_button);
+        topLabel = (TextView) view.findViewById(R.id.cell_grid_dialog_top_label);
+        viewPager = (ViewPager) view.findViewById(R.id.cell_grid_dialog_grid_view_pager);
+        acceptButton = (DButton) view.findViewById(R.id.cell_grid_dialog_accept_button);
 
         //Set Listeners
         previousButton.setOnClickListener(new View.OnClickListener() {

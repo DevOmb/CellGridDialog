@@ -16,7 +16,7 @@
         android:padding="4dp">
 
         <com.devomb.disableables.widget.DImageButton
-            android:id="@+id/tv_show_dialog_previous_button"
+            android:id="@+id/cell_grid_dialog_previous_button"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:adjustViewBounds="true"
@@ -27,7 +27,7 @@
             app:d_alpha="0.3" />
 
         <TextView
-            android:id="@+id/tv_show_dialog_top_label"
+            android:id="@+id/cell_grid_dialog_top_label"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -37,7 +37,7 @@
             android:textStyle="bold" />
 
         <com.devomb.disableables.widget.DImageButton
-            android:id="@+id/tv_show_dialog_next_button"
+            android:id="@+id/cell_grid_dialog_next_button"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:adjustViewBounds="true"
@@ -56,12 +56,12 @@
         android:background="@color/holo_white" />
 
     <android.support.v4.view.ViewPager
-        android:id="@+id/tv_show_dialog_grid_view_pager"
+        android:id="@+id/cell_grid_dialog_grid_view_pager"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dialog_width" />
 
     <com.devomb.disableables.widget.DButton
-        android:id="@+id/tv_show_dialog_accept_button"
+        android:id="@+id/cell_grid_dialog_accept_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
