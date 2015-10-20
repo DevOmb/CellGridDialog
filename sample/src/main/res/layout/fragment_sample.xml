@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/single_page_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Single Page"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/multi_page_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Multiple Pages"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/multi_page_list_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Multiple (Unequal) Pages"/>
+
+</LinearLayout>

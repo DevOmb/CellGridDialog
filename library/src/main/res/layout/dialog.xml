@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/dialog_width"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_dark_background"
+    android:minWidth="@dimen/dialog_width"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <com.devomb.disableables.widget.DImageButton
+            android:id="@+id/tv_show_dialog_previous_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:adjustViewBounds="true"
+            android:background="@color/transparent"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_previous"
+            app:d_alpha="0.3" />
+
+        <TextView
+            android:id="@+id/tv_show_dialog_top_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Placeholder"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.devomb.disableables.widget.DImageButton
+            android:id="@+id/tv_show_dialog_next_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:adjustViewBounds="true"
+            android:background="@color/transparent"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_next"
+            app:d_alpha="0.3" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/holo_white" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tv_show_dialog_grid_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_width" />
+
+    <com.devomb.disableables.widget.DButton
+        android:id="@+id/tv_show_dialog_accept_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@color/transparent"
+        android:text="Accept"
+        android:textAllCaps="true"
+        android:padding="16dp"
+        android:textColor="@color/holo_white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:d_alpha="0.4" />
+
+</LinearLayout>
